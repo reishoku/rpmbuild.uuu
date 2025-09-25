@@ -4,8 +4,8 @@ Version: 1.5.201
 Release: 1%{dist}
 Summary: Freescale/NXP I.MX Chip image deploy tools
 
-SourceLicense: BSD
-License: BSD
+SourceLicense: BSD-3-Clause
+License: BSD-3-Clause
 URL: https://github.com/nxp-imx/mfgtools
 Source0: https://github.com/nxp-imx/mfgtools/releases/download/uuu_%{version}/uuu_source-uuu_%{version}.tar.gz
 
