@@ -23,15 +23,11 @@ BuildRequires: pkgconfig(libzstd)
 BuildRequires: pkgconfig(libudev)
 BuildRequires: pkgconfig(libcap)
 
-# Requires: ''
-# Requires:
-
 %description
 Freescale/NXP I.MX Chip image deploy tools.
 
 %prep
 %setup -q -n uuu-uuu_%{version}
-
 
 %build
 %define _vpath_srcdir .
@@ -43,15 +39,13 @@ Freescale/NXP I.MX Chip image deploy tools.
 %install
 %{cmake_install}
 
-
 %check
-
 
 %files
 %{_bindir}/uuu
 %license LICENSE
-%doc
 
 
 %changelog
-%autochangelog
+* Thu Sep 25 2025 KOSHIKAWA Kenichi <reishoku.misc@pm.me> - 1.5.201-1
+- Initial RPM package for uuu
