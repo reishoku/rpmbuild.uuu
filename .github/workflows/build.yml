@@ -64,7 +64,6 @@ jobs:
           find ~/rpmbuild/RPMS -type f -name "*.rpm" -exec rpm -qpi {} \+
           find ~/rpmbuild/RPMS -type f -name "*.rpm" -exec rpm -qpl {} \+
 
-jobs:
   build-rpm-aarch64:
     strategy:
       matrix:
